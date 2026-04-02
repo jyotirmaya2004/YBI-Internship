@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Post â€” WordSprint</title>
+    <title>Post - WordSprint</title>
     <meta name="description" content="Read this article on WordSprint." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +31,13 @@
     <nav class="navbar" id="navbar">
         <div class="nav-inner">
             <a href="index.html" class="nav-logo">
-                <span class="logo-icon">â—ˆ</span>
+                <span class="logo-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+                        <path d="M12 2L19 6V12C19 16.4 16.2 20.2 12 22C7.8 20.2 5 16.4 5 12V6L12 2Z" fill="currentColor" opacity="0.18" />
+                        <path d="M12 2L19 6V12C19 16.4 16.2 20.2 12 22C7.8 20.2 5 16.4 5 12V6L12 2Z" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
                 <span class="logo-text">Word<span class="logo-accent">Sprint</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
@@ -57,10 +63,10 @@
             <!-- Breadcrumb -->
             <nav class="post-breadcrumb" id="postBreadcrumb">
                 <a href="index.html">Home</a>
-                <span>â€º</span>
+                <span>&rsaquo;</span>
                 <a href="#" id="catLink">Category</a>
-                <span>â€º</span>
-                <span id="postTitle">Loadingâ€¦</span>
+                <span>&rsaquo;</span>
+                <span id="postTitle">Loading...</span>
             </nav>
 
             <!-- Post Header -->
@@ -69,7 +75,7 @@
                     <span class="post-cat-badge" id="postCatBadge"></span>
                     <span class="post-read-time" id="postReadTime"></span>
                 </div>
-                <h1 class="post-title" id="postTitleH1">Loadingâ€¦</h1>
+                <h1 class="post-title" id="postTitleH1">Loading...</h1>
                 <div class="post-meta-bottom">
                     <span class="post-date" id="postDate"></span>
                 </div>
@@ -80,7 +86,7 @@
             <div class="post-content markdown-body" id="postContent">
                 <div class="loading-spinner">
                     <div class="spinner"></div>
-                    <p>Loading articleâ€¦</p>
+                    <p>Loading article...</p>
                 </div>
             </div>
 
@@ -88,8 +94,8 @@
             <div class="post-footer">
                 <div class="post-tags" id="postTags"></div>
                 <div class="post-nav-btns">
-                    <a href="#" id="backToCat" class="btn-ghost-sm">â† Back to Category</a>
-                    <a href="index.html" class="btn-ghost-sm">Home â†‘</a>
+                    <a href="#" id="backToCat" class="btn-ghost-sm">&larr; Back to Category</a>
+                    <a href="index.html" class="btn-ghost-sm">Home &uarr;</a>
                 </div>
             </div>
         </article>
@@ -109,7 +115,13 @@
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-logo">
-                <span class="logo-icon">â—ˆ</span>
+                <span class="logo-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+                        <path d="M12 2L19 6V12C19 16.4 16.2 20.2 12 22C7.8 20.2 5 16.4 5 12V6L12 2Z" fill="currentColor" opacity="0.18" />
+                        <path d="M12 2L19 6V12C19 16.4 16.2 20.2 12 22C7.8 20.2 5 16.4 5 12V6L12 2Z" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
                 <span class="logo-text">Word<span class="logo-accent">Sprint</span></span>
             </div>
             <p class="footer-sub">Built by Jyotirmaya Behera for those who learn, think, and build.</p>
@@ -122,7 +134,7 @@
                 <a href="category.html#cat=ainews">AI News</a>
                 <a href="category.html#cat=statistics">Stats</a>
             </div>
-            <p class="footer-copy">Â© 2026 Jyotirmaya Behera. All rights reserved.</p>
+            <p class="footer-copy">&copy; 2026 Jyotirmaya Behera. All rights reserved.</p>
         </div>
     </footer>
 

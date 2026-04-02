@@ -1,5 +1,5 @@
-﻿y/**
- * category.js â€” Category page logic
+﻿/**
+ * category.js - Category page logic
  * Reads category from hash (#cat=ml) and loads articles dynamically from articles.json.
  */
 let currentSort = 'newest';
@@ -35,13 +35,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 });
 
-/* â”€â”€ Parse hash params â”€â”€ */
+/* Parse hash params */
 function getHashParam(key) {
     const hash = window.location.hash.replace(/^#/, '');
     return new URLSearchParams(hash).get(key);
 }
 
-/* â”€â”€ Nav â”€â”€ */
+/* Nav */
 function initNav() {
     const navbar = document.getElementById('navbar');
     const hamburger = document.getElementById('hamburger');
@@ -65,7 +65,7 @@ function updateNavHighlight(cat) {
     });
 }
 
-/* â”€â”€ Domain schedule info â”€â”€ */
+/* Domain schedule info */
 const DOMAIN_SCHEDULE = {
     ml: { day: 'Monday', time: '8 AM IST' },
     dl: { day: 'Tuesday', time: '8 AM IST' },
@@ -76,7 +76,7 @@ const DOMAIN_SCHEDULE = {
     ainews: { day: 'Sunday', time: '8 AM IST' },
 };
 
-/* â”€â”€ Sort â”€â”€ */
+/* Sort */
 function setSortOrder(order) {
     currentSort = order;
     document.getElementById('sortNewest')?.classList.toggle('active', order === 'newest');
@@ -84,14 +84,14 @@ function setSortOrder(order) {
     renderBlogList();
 }
 
-/* â”€â”€ Apply Category Theme â”€â”€ */
+/* Apply Category Theme */
 function applyCategoryTheme(cat) {
     const meta = CATEGORY_META[cat];
     if (!meta) return;
 
     document.body.className = document.body.className.replace(/theme-\w+/g, '');
     document.body.classList.add(`theme-${cat}`);
-    document.title = `${meta.label} â€” WordSprint`;
+    document.title = `${meta.label} - WordSprint`;
 
     const icon = document.getElementById('catHeroIcon');
     const badge = document.getElementById('catBadge');
@@ -108,18 +108,34 @@ function applyCategoryTheme(cat) {
         const sched = DOMAIN_SCHEDULE[cat];
         if (sched && sched.day) {
             scheduleBadge.innerHTML = `
-                <span class="sched-icon">ðŸ—“ï¸</span>
-                <span>Fresh articles drop every <strong>${sched.day}</strong> â€” live by <strong>${sched.time}</strong></span>
+                <span class="sched-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <rect x="4" y="5" width="16" height="15" rx="3" stroke="currentColor" stroke-width="1.7" />
+                        <path d="M8 3V7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                        <path d="M16 3V7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                        <path d="M4 9H20" stroke="currentColor" stroke-width="1.7" />
+                        <path d="M9 13H12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" />
+                    </svg>
+                </span>
+                <span>Fresh articles drop every <strong>${sched.day}</strong> - live by <strong>${sched.time}</strong></span>
             `;
             scheduleBadge.style.display = 'flex';
         } else {
-            scheduleBadge.innerHTML = `<span class="sched-icon">ðŸ“¡</span><span>Published as breaking news arrives</span>`;
+            scheduleBadge.innerHTML = `
+                <span class="sched-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none">
+                        <circle cx="12" cy="12" r="7" stroke="currentColor" stroke-width="1.7" />
+                        <circle cx="12" cy="12" r="2.5" fill="currentColor" />
+                    </svg>
+                </span>
+                <span>Published as breaking news arrives</span>
+            `;
             scheduleBadge.style.display = 'flex';
         }
     }
 }
 
-/* â”€â”€ Render Blog List â”€â”€ */
+/* Render Blog List */
 async function renderBlogList() {
     const listEl = document.getElementById('blogList');
     const emptyEl = document.getElementById('emptyState');
@@ -162,10 +178,10 @@ async function renderBlogList() {
         <h2 class="blog-item-title">${escapeHtml(blog.title)}</h2>
         <p class="blog-item-desc">${escapeHtml(blog.description)}</p>
         <div class="blog-item-footer">
-          <span class="read-time">ðŸ“– ${blog.readTime} read</span>
+          <span class="read-time">${blog.readTime} read</span>
         </div>
       </div>
-      <span class="blog-item-arrow">â†’</span>
+      <span class="blog-item-arrow">&rarr;</span>
     </a>
   `).join('');
 }
@@ -173,4 +189,5 @@ async function renderBlogList() {
 function escapeHtml(str) {
     return (str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
+
 

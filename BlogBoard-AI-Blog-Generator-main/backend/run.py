@@ -1,4 +1,5 @@
-﻿mimport argparse
+﻿import argparse
+import importlib
 import sys
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
@@ -7,12 +8,12 @@ if str(BACKEND_DIR) not in sys.path:
     sys.path.insert(0, str(BACKEND_DIR))
 
 # â”€â”€ Load .env (GROQ_API_KEY etc.) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-try:
-    from dotenv import load_dotenv
-    env_path = BACKEND_DIR.parent / ".env"
-    load_dotenv(dotenv_path=env_path)
-except ImportError:
-    pass  # python-dotenv is optional; export env vars manually if needed
+env_path = BACKEND_DIR.parent / ".env"
+dotenv_spec = importlib.util.find_spec("dotenv")
+if dotenv_spec is not None:
+    dotenv = importlib.import_module("dotenv")
+    dotenv.load_dotenv(dotenv_path=env_path)
+# python-dotenv is optional; export env vars manually if needed
 
 # â”€â”€ Import compiled graph â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 from graph.graph import graph

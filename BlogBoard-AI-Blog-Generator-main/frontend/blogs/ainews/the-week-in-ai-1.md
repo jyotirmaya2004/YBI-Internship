@@ -1,5 +1,5 @@
 # The Week in AI #1
-![Artificial Intelligence](https://coingeek.com/wp-content/uploads/2023/07/Artificial-Intelligence-2-jpg.webp)
+![Artificial Intelligence](https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1000&q=80)
 
 The past week has been a watershed moment for the artificial intelligence (AI) industry, with significant developments that signal a structural shift in the way AI is being developed, deployed, and regulated. From IBM's announcement of "super-agents" to Autodesk's $200 million investment in AI startup World Labs, the AI landscape is evolving at a breakneck pace. Meanwhile, concerns about the potential risks and downsides of AI continue to grow, with experts warning about the need for greater regulation and oversight.
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Category â€” WordSprint</title>
+    <title>Category - WordSprint</title>
     <meta name="description" content="Browse all articles in this category." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,7 +29,13 @@
     <nav class="navbar" id="navbar">
         <div class="nav-inner">
             <a href="index.html" class="nav-logo">
-                <span class="logo-icon">â—ˆ</span>
+                <span class="logo-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+                        <path d="M12 2L19 6V12C19 16.4 16.2 20.2 12 22C7.8 20.2 5 16.4 5 12V6L12 2Z" fill="currentColor" opacity="0.18" />
+                        <path d="M12 2L19 6V12C19 16.4 16.2 20.2 12 22C7.8 20.2 5 16.4 5 12V6L12 2Z" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
                 <span class="logo-text">Word<span class="logo-accent">Sprint</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
@@ -51,10 +57,10 @@
     <!-- Category Hero -->
     <section class="cat-hero">
         <div class="cat-hero-inner">
-            <a href="index.html" class="breadcrumb">â† Home</a>
+            <a href="index.html" class="breadcrumb">&larr; Home</a>
             <div class="cat-hero-icon" id="catHeroIcon"></div>
             <div class="cat-badge" id="catBadge"></div>
-            <h1 class="cat-hero-title" id="catHeroTitle">Loadingâ€¦</h1>
+            <h1 class="cat-hero-title" id="catHeroTitle">Loading...</h1>
             <p class="cat-hero-desc" id="catHeroDesc"></p>
             <div class="cat-count-wrap">
                 <span id="catPostCount" class="cat-count">0</span>
@@ -77,7 +83,7 @@
                     <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="1.5" />
                     <path d="M13.5 13.5 L17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
                 </svg>
-                <input type="text" id="searchInput" class="search-input" placeholder="Search articlesâ€¦" />
+                <input type="text" id="searchInput" class="search-input" placeholder="Search articles..." />
             </div>
         </div>
     </div>
@@ -87,11 +93,11 @@
         <div class="blog-list" id="blogList">
             <div class="loading-spinner">
                 <div class="spinner"></div>
-                <p>Loading articlesâ€¦</p>
+                <p>Loading articles...</p>
             </div>
         </div>
         <div class="empty-state hidden" id="emptyState">
-            <div class="empty-icon">ðŸ“­</div>
+            <div class="empty-icon">No results</div>
             <h3>No articles found</h3>
             <p>Try a different search term or check back later.</p>
         </div>
@@ -101,7 +107,13 @@
     <footer class="footer">
         <div class="footer-inner">
             <div class="footer-logo">
-                <span class="logo-icon">â—ˆ</span>
+                <span class="logo-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none">
+                        <path d="M12 2L19 6V12C19 16.4 16.2 20.2 12 22C7.8 20.2 5 16.4 5 12V6L12 2Z" fill="currentColor" opacity="0.18" />
+                        <path d="M12 2L19 6V12C19 16.4 16.2 20.2 12 22C7.8 20.2 5 16.4 5 12V6L12 2Z" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
                 <span class="logo-text">Word<span class="logo-accent">Sprint</span></span>
             </div>
             <p class="footer-sub">Built by Jyotirmaya Behera for those who learn, think, and build.</p>
@@ -137,7 +149,7 @@
                     </svg>
                 </a>
             </div>
-            <p class="footer-copy">Â© 2026 Jyotirmaya Behera. All rights reserved.</p>
+            <p class="footer-copy">&copy; 2026 Jyotirmaya Behera. All rights reserved.</p>
         </div>
     </footer>
 

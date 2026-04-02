@@ -431,7 +431,15 @@
 }
 
 .sched-icon {
-    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.sched-icon svg {
+    display: block;
 }
 
 @keyframes fadeIn {

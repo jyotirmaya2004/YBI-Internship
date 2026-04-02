@@ -1,4 +1,4 @@
-﻿ <h1 align="center"><a href="https://kalyanm45.github.io/WordSprint-AI-Blog-Generator/">WordSprint â€” Autonomous AI Article Generator</a></h1>
+﻿ <h1 align="center"><a href="https://kalyanm45.github.io/WordSprint-AI-Blog-Generator/">WordSprint - Autonomous AI Article Generator</a></h1>
 
 <p align="center"> <img src="https://img.shields.io/github/license/KalyanM45/WordSprint-AI-Blog-Generator?style=ROUND" alt="License" /> <img src="https://img.shields.io/github/stars/KalyanM45/WordSprint-AI-Blog-Generator?style=ROUND" alt="Stars" /> <img src="https://img.shields.io/github/forks/KalyanM45/WordSprint-AI-Blog-Generator?style=ROUND" alt="Forks" /> <img src="https://img.shields.io/github/issues/KalyanM45/WordSprint-AI-Blog-Generator?style=ROUND" alt="Issues" />
 </p>
@@ -96,9 +96,9 @@ To use this project, you need an API key from Groq to power the Large Language M
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-â€¢ **Report bugs**: If you encounter any bugs, please let us know. Open up an issue and let us know the problem.
+- **Report bugs**: If you encounter any bugs, please let us know. Open up an issue and let us know the problem.
 
-â€¢ **Contribute code**: If you are a developer and want to contribute, follow the instructions below to get started!
+- **Contribute code**: If you are a developer and want to contribute, follow the instructions below to get started!
 
 1. Fork the Project
 2. Create your Feature Branch
@@ -106,7 +106,7 @@ Contributions are what make the open-source community such an amazing place to l
 4. Push to the Branch
 5. Open a Pull Request
 
-â€¢ **Suggestions**: If you don't want to code but have some awesome ideas, open up an issue explaining some updates or improvements you would like to see!
+- **Suggestions**: If you don't want to code but have some awesome ideas, open up an issue explaining some updates or improvements you would like to see!
 
 #### Don't forget to give the project a star! Thanks again!
 
@@ -117,6 +117,7 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 ## Acknowledgements
 
 We'd like to extend our gratitude to all individuals and organizations who have played a role in the development and success of this project. Your support, whether through contributions, inspiration, or encouragement, has been invaluable. Thank you for being a part of our journey.
+
 
 
 

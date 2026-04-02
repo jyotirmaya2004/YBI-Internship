@@ -218,8 +218,14 @@ img {
 
 .logo-icon {
   color: var(--accent-primary);
-  font-size: 1.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   line-height: 1;
+}
+
+.logo-icon svg {
+  display: block;
 }
 
 .logo-text {

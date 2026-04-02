@@ -1,5 +1,5 @@
-/**
- * home.js — Home page logic
+﻿/**
+ * home.js â€” Home page logic
  * Uses async blogs-data.js to load articles dynamically.
  */
 document.addEventListener('DOMContentLoaded', async () => {
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     await Promise.all([loadRecentPosts(), loadStats()]);
 });
 
-/* ── Nav ── */
+/* â”€â”€ Nav â”€â”€ */
 function initNav() {
     const navbar = document.getElementById('navbar');
     const hamburger = document.getElementById('hamburger');
@@ -24,7 +24,7 @@ function initNav() {
     });
 }
 
-/* ── Stats Counter ── */
+/* â”€â”€ Stats Counter â”€â”€ */
 async function loadStats() {
     const total = await getTotalCount();
     animateCounter('totalBlogs', total);
@@ -44,7 +44,7 @@ function animateCounter(id, target) {
     }, 40);
 }
 
-/* ── Recent Posts ── */
+/* â”€â”€ Recent Posts â”€â”€ */
 async function loadRecentPosts() {
     const container = document.getElementById('recentPosts');
     if (!container) return;
@@ -70,7 +70,7 @@ async function loadRecentPosts() {
       </div>
       <h3 class="recent-title">${escapeHtml(blog.title)}</h3>
       <p class="recent-desc">${escapeHtml(blog.description)}</p>
-      <span class="recent-readtime">📖 ${blog.readTime} read</span>
+      <span class="recent-readtime">${blog.readTime} read</span>
     </a>`;
     }).join('');
 }
@@ -79,7 +79,7 @@ function escapeHtml(str) {
     return (str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-/* ── Particle Background ─────────────────────────────── */
+/* â”€â”€ Particle Background â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 function initParticles() {
     const canvas = document.getElementById('particleCanvas');
     if (!canvas) return;
@@ -136,3 +136,4 @@ function initParticles() {
     }
     draw();
 }
+

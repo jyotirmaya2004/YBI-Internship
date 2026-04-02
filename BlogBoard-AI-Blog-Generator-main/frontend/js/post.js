@@ -1,5 +1,5 @@
 ﻿/**
- * post.js â€” Blog post viewer with markdown rendering
+ * post.js - Blog post viewer with markdown rendering
  * Uses window.location.hash (#id=...) to avoid server stripping query params
  */
 document.addEventListener('DOMContentLoaded', () => {
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initReadingProgress();
 });
 
-/* â”€â”€ Parse hash params â”€â”€ */
+/* Parse hash params */
 function getHashParam(key) {
     // Supports formats: #id=foo  OR  #cat=ml&id=foo
     const hash = window.location.hash.replace(/^#/, '');
@@ -16,7 +16,7 @@ function getHashParam(key) {
     return params.get(key);
 }
 
-/* â”€â”€ Nav â”€â”€ */
+/* Nav */
 function initNav() {
     const navbar = document.getElementById('navbar');
     const hamburger = document.getElementById('hamburger');
@@ -32,7 +32,7 @@ function initNav() {
     });
 }
 
-/* â”€â”€ Reading Progress â”€â”€ */
+/* Reading Progress */
 function initReadingProgress() {
     const bar = document.getElementById('readingProgress');
     if (!bar) return;
@@ -44,7 +44,7 @@ function initReadingProgress() {
     });
 }
 
-/* â”€â”€ Load Post â”€â”€ */
+/* Load Post */
 async function loadPost() {
     // Read id from hash: post.html#id=blogs/ml/intro-to-ml.md
     const rawId = getHashParam('id');
@@ -52,7 +52,7 @@ async function loadPost() {
     const contentEl = document.getElementById('postContent');
 
     if (!id) {
-        // No id in hash â€” redirect to home
+        // No id in hash - redirect to home
         window.location.replace('index.html');
         return;
     }
@@ -65,7 +65,7 @@ async function loadPost() {
     const meta = CATEGORY_META[blog.category];
 
     // Set page title
-    document.title = `${blog.title} â€” WordSprint`;
+    document.title = `${blog.title} - WordSprint`;
 
     // Breadcrumb
     const catLink = document.getElementById('catLink');
@@ -87,7 +87,7 @@ async function loadPost() {
     }
 
     const readTimeEl = document.getElementById('postReadTime');
-    if (readTimeEl) readTimeEl.textContent = `ðŸ“– ${blog.readTime} read`;
+    if (readTimeEl) readTimeEl.textContent = `${blog.readTime} read`;
 
     // Active nav link
     document.querySelectorAll('.nav-link[href]').forEach(link => {
@@ -98,7 +98,7 @@ async function loadPost() {
     const backBtn = document.getElementById('backToCat');
     if (backBtn) {
         backBtn.href = `category.html#cat=${blog.category}`;
-        backBtn.textContent = `â† Back to ${meta.shortLabel}`;
+        backBtn.textContent = `< Back to ${meta.shortLabel}`;
     }
 
     // Tags
@@ -128,7 +128,7 @@ async function loadPost() {
     }
 }
 
-/* â”€â”€ Render Markdown â”€â”€ */
+/* Render Markdown */
 function renderMarkdown(mdText, container) {
     marked.setOptions({
         gfm: true,
@@ -177,7 +177,7 @@ function renderMarkdown(mdText, container) {
     });
 }
 
-/* â”€â”€ Build Table of Contents â”€â”€ */
+/* Build Table of Contents */
 function buildTOC() {
     const content = document.getElementById('postContent');
     const tocNav = document.getElementById('tocNav');
@@ -214,14 +214,13 @@ function buildTOC() {
     });
 }
 
-/* â”€â”€ Error State â”€â”€ */
+/* Error State */
 function showError(message, container) {
     if (!container) return;
     container.innerHTML = `
     <div style="padding:40px;text-align:center;color:var(--text-muted)">
-      <div style="font-size:2.5rem;margin-bottom:16px">âš ï¸</div>
+      <div style="font-size:2.5rem;margin-bottom:16px">!</div>
       <h3 style="color:var(--text-secondary);margin-bottom:12px">Unable to load article</h3>
       <p style="line-height:1.7">${message}</p>
     </div>`;
 }
-

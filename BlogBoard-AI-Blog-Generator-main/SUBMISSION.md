@@ -3,12 +3,10 @@
 ## Student Details
 
 - Name: Jyotirmaya Behera
-- Project: NewBlogName - AI Blog Generator
 - Project: WordSprint - AI Blog Generator
 
 ## Project Overview
 
-NewBlogName is an AI-powered blogging platform that automates the generation and publishing of technical blog content related to Artificial Intelligence and Machine Learning.
 WordSprint is an AI-powered blogging platform that automates the generation and publishing of technical blog content related to Artificial Intelligence and Machine Learning.
 
 It uses a Python backend workflow to generate articles and a static frontend to display them in a clean category-based website.
