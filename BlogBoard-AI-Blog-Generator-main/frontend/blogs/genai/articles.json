@@ -1,0 +1,50 @@
+[
+  {
+    "id": "blogs/genai/autoregressive-models.md",
+    "category": "genai",
+    "title": "Autoregressive Models",
+    "description": "Learn about autoregressive models and their applications in generative AI. Improve your understanding",
+    "date": "2026-03-28",
+    "tags": [
+      "autoregressive-models",
+      "generative-ai",
+      "deep-learning",
+      "language-models",
+      "sequence-prediction"
+    ],
+    "readTime": "5 min",
+    "file": "blogs/genai/autoregressive-models.md"
+  },
+  {
+    "id": "blogs/genai/generative-ai-models.md",
+    "category": "genai",
+    "title": "Generative AI Models",
+    "description": "Learn probabilistic generative modeling for AI. Discover techniques and applications.",
+    "date": "2026-03-21",
+    "tags": [
+      "probabilistic-models",
+      "generative-ai",
+      "machine-learning",
+      "deep-learning",
+      "natural-language-processing"
+    ],
+    "readTime": "6 min",
+    "file": "blogs/genai/generative-ai-models.md"
+  },
+  {
+    "id": "blogs/genai/generative-ai-intro.md",
+    "category": "genai",
+    "title": "Generative AI Intro",
+    "description": "Learn basics of Generative AI. Discover its applications",
+    "date": "2026-03-07",
+    "tags": [
+      "generative-models",
+      "artificial-intelligence",
+      "machine-learning",
+      "deep-learning",
+      "natural-language-processing"
+    ],
+    "readTime": "6 min",
+    "file": "blogs/genai/generative-ai-intro.md"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "blogs/statistics/measures-of-dispersion.md",
+    "category": "statistics",
+    "title": "Measures of Dispersion",
+    "description": "Learn dispersion stats, boost AI model accuracy",
+    "date": "2026-04-01",
+    "tags": [
+      "statistics-for-ai",
+      "data-analysis",
+      "machine-learning",
+      "dispersion-measures",
+      "data-science"
+    ],
+    "readTime": "5 min",
+    "file": "blogs/statistics/measures-of-dispersion.md"
+  },
+  {
+    "id": "blogs/statistics/central-tendency-measures.md",
+    "category": "statistics",
+    "title": "Central Tendency Measures",
+    "description": "Learn to calculate mean, median, and mode for data analysis. Improve your statistical skills.",
+    "date": "2026-03-25",
+    "tags": [
+      "central-tendency",
+      "mean-median-mode",
+      "data-analysis",
+      "statistical-measures",
+      "machine-learning"
+    ],
+    "readTime": "5 min",
+    "file": "blogs/statistics/central-tendency-measures.md"
+  },
+  {
+    "id": "blogs/statistics/population-vs-sample.md",
+    "category": "statistics",
+    "title": "Population vs Sample",
+    "description": "Learn key differences, gain insights",
+    "date": "2026-03-18",
+    "tags": [
+      "statistics-for-ai",
+      "machine-learning-concepts",
+      "data-science-fundamentals",
+      "population-statistics",
+      "sample-size-calculation"
+    ],
+    "readTime": "6 min",
+    "file": "blogs/statistics/population-vs-sample.md"
+  },
+  {
+    "id": "blogs/statistics/ml-data-types.md",
+    "category": "statistics",
+    "title": "ML Data Types",
+    "description": "Learn key data types in ML. Improve model accuracy.",
+    "date": "2026-03-11",
+    "tags": [
+      "machine-learning",
+      "data-preprocessing",
+      "data-analysis",
+      "data-types",
+      "ml-models"
+    ],
+    "readTime": "5 min",
+    "file": "blogs/statistics/ml-data-types.md"
+  },
+  {
+    "id": "blogs/statistics/stats-for-aiml.md",
+    "category": "statistics",
+    "title": "Stats for AI/ML",
+    "description": "Learn stats for AI & ML. Improve model performance",
+    "date": "2026-03-04",
+    "tags": [
+      "machine-learning",
+      "artificial-intelligence",
+      "data-science",
+      "statistical-modeling",
+      "data-analytics"
+    ],
+    "readTime": "6 min",
+    "file": "blogs/statistics/stats-for-aiml.md"
+  }
+]
